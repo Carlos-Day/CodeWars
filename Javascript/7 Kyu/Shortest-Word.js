@@ -1,0 +1,17 @@
+function findShort(s){
+    //given one string with multiple space separated words. Strings will not be empty. no unusual data types. 
+    //return an int with the length of the word. 
+    
+    //split the string into an array, separated by spaces. 
+    let arr = s.split(' ')
+    //find the word with the shortest length. 
+    let shortestWord = arr[0].length
+    for(let i=0; i<arr.length; i++){
+      if(arr[i].length <= shortestWord){
+        shortestWord = arr[i].length
+      } 
+    }
+    
+    //return the length of that word. 
+    return shortestWord
+  }
